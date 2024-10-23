@@ -1,0 +1,130 @@
+<html>
+<head>
+    <style>
+        body::before {
+            content: '';
+            background-image: url("../Travel/world.png");
+            background-size: 130%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-y: 10%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            filter: blur(2px);
+            z-index: 1;
+        }
+        #b {
+            background-color: rgb(1, 1, 22);
+            color: rgba(162, 138, 2, 0.937);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        p {
+            color: rgba(162, 138, 2, 0.937);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        header {
+            background-color: rgb(22, 24, 31);
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1000;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(133, 124, 73);
+            margin: 0 15px;
+        }
+        footer {
+            margin-top:13%;
+            background-color: rgb(22, 24, 31);
+            color: rgb(133, 124, 73);
+        }
+        #s {
+            text-align: center;
+            font-family: fantasy;
+            font-size: xx-large;
+            color: rgb(133, 124, 73);
+        }
+        #y {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: xx-large;
+            text-align: center;
+            color: rgb(133, 124, 73);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 150px;
+            border-radius: 5px;border-style:groove;
+            width: 20%;
+            height:50%;
+            position: relative; 
+            z-index: 2; 
+            padding: 20px; 
+            color:cornsilk;
+            font-family: fantasy;
+        }
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid rgb(133, 124, 73);
+            border-radius: 5px;
+        }
+        div {
+            color: antiquewhite;
+        }
+        h3{
+            color:gold
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../Travel/index.html"><b>HOME</b></a>
+        <a href="../Travel/indext.html"><b>DESTINATIONS</b></a>
+    </header>
+    
+    <form>
+        <h3>Book Now</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" placeholder="10-digit number">
+
+        <label for="destination">Destination:</label>
+        <select>
+            <option value="" disabled selected>Select your destination</option>
+            <option value="india">India</option>
+            <option value="paris">Paris</option>
+            <option value="london">London</option>
+        
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <footer>
+        <div id="s">TRAVEL not just to find yourself, but to realise who you have been!</div>
+        <div id="y"><b>Why us?</b></div>
+        <p>
+            We offer you this remarkable realisation at the best price<br>
+            with world-class packages.<br>
+            Tranquil Destinations<br>
+            Hotels that embody luxury at its finest.<br>
+        </p>
+    </footer>
+</body>
+</html>
